@@ -1,148 +1,94 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <title>Kelompok 11 - Desain UI/UX &amp; Pemrograman Web</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
-        header, footer { background: #d9d9d9; text-align: center; padding: 20px; }
-        header h1 { margin: 4px 0; }
-        main { max-width: 1000px; margin: 0 auto; padding: 16px; }
-        .intro { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 12px 16px; margin-bottom: 16px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 16px; }
-        .card { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 14px; }
-        .card-top { display: flex; gap: 14px; }
-        .card img { width: 130px; height: 150px; object-fit: cover; background: #e6e6e6; border: 1px solid #ccc; }
-        .card h2 { font-size: 18px; margin: 0 0 8px; }
-        table { border-collapse: collapse; font-size: 14px; }
-        td { padding: 2px 8px 2px 0; vertical-align: top; }
-        td:first-child { color: #555; white-space: nowrap; }
-        blockquote { margin: 12px 0 0; padding: 8px 12px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; }
-        @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } .card-top { flex-direction: column; } }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kelompok 11 - Desain UI/UX &amp; Pemrograman Web</title>
 </head>
 <body>
 
-    <header>
-        <h1>Kelompok 11</h1>
-        <p>Desain UI/UX &amp; Pemrograman Web</p>
-        <nav>
-            <a href="#intro">Intro</a> |
-            <a href="#anggota">Anggota</a>
-        </nav>
-    </header>
+  <header>
+    <h1>Kelompok 11</h1>
+    <p>Desain UI/UX &amp; Pemrograman Web</p>
 
-    <main>
-        <section id="intro" class="intro">
-            <h2>Intro</h2>
-            <p>
-                Berikut adalah anggota kelompok 11.
-            </p>
-        </section>
+  </header>
 
-        <section id="anggota" class="grid">
+  <hr>
 
-            <!-- Anggota 1 -->
-            <article class="card">
-                <div class="card-top">
-                    <figure style="margin:0">
-                        <img src="assets/img/nafis.jpeg" alt="Foto Anggota 1">
-                    </figure>
-                    <div>
-                        <h2>Muhammad Nafis Nashrullah <span class="role"></h2>
-                        <table>
-                            <tr><td>Nama Panggilan</td><td>:Nafis</td></tr>
-                            <tr><td>NIM</td><td>:0110226015</td></tr>
-                            <tr><td>Program Studi</td><td>:Teknik Informatika</td></tr>
-                            <tr><td>Asal Kota</td><td>:Depok</td></tr>
-                            <tr><td>Email</td><td>:nafisnashrullah@gmail.com</td></tr>
-                            <tr><td>Hobi</td><td>:Mancing</td></tr>
-                        </table>
-                    </div>
-            </article>
+  <main>
 
-            <article class="card">
-                <div class="card-top">
-                    <figure style="margin:0">
-                        <img src="assets/img/rifhan.jpeg" alt="Foto Anggota 2">
-                    </figure>
-                    <div>
-                        <h2>Muhammad Rifhan Kasyfa</h2>
-                        <table>
-                            <tr><td>Nama Panggilan</td><td>:Rifhan</td></tr>
-                            <tr><td>NIM</td><td>:0110226024</td></tr>
-                            <tr><td>Program Studi</td><td>:Teknik Informatika</td></tr>
-                            <tr><td>Kota Asal</td><td>:Depok</td></tr>
-                            <tr><td>Email</td><td>:muhrufhan6@gmail.com</td></tr>
-                            <tr><td>Hobi</td><td>:Nonton Film</td></tr>
-                        </table>
-                    </div>
 
-            </article>
+    <section id="anggota">
 
-            <!-- Anggota 3 -->
-            <article class="card">
-                <div class="card-top">
-                    <figure style="margin:0">
-                        <img src="assets/img/noval.jpeg" alt="Foto Anggota 3">
-                    </figure>
-                    <div>
-                        <h2>Muhammad Noval Reza Ramadhan <span class="role"></h2>
-                        <table>
-                            <tr><td>Nama Panggilan</td><td>:Noval</td></tr>
-                            <tr><td>NIM</td><td>:0110226163</td></tr>
-                            <tr><td>Program Studi</td><td>:Teknik Informatika</td></tr>
-                            <tr><td>Asal Kota</td><td>:Jakarta Timur</td></tr>
-                            <tr><td>Email</td><td>:novalrahmadan1777@gmail.com</td></tr>
-                            <tr><td>Hobi</td><td>:Ngegame, Nonton Film</td></tr>
-                        </table>
-                    </div>
-            </article>
+      <article>
+        <img src="https://naa13-stack.github.io/nafis_tugas_praktikum_01/assets/img/nafis.jpeg" alt="Foto Anggota 1" width="200">
+        <h2>Muhammad Nafis Nashrullah</h2>
+        <table border="1" cellpadding="6">
+          <tr><th align="left">Nama Panggilan</th><td>Nafis</td></tr>
+          <tr><th align="left">NIM</th><td>0110226015</td></tr>
+          <tr><th align="left">Program Studi</th><td>Teknik Informatika</td></tr>
+          <tr><th align="left">Asal Kota</th><td>Depok</td></tr>
+          <tr><th align="left">Email</th><td>nafisnashrullah@gmail.com</td></tr>
+          <tr><th align="left">Hobi</th><td>Mancing</td></tr>
+        </table>
+      </article>
 
-            <!-- Anggota 4 -->
-            <article class="card">
-                <div class="card-top">
-                    <figure style="margin:0">
-                        <img src="assets/img/rasyad.jpeg" alt="Foto Anggota 4">
-                    </figure>
-                    <div>
-                        <h2>Muhammad Rasyad Zain<span class="role"></h2>
-                        <table>
-                            <tr><td>Nama Panggilan</td><td>:Rasyad</td></tr>
-                            <tr><td>NIM</td><td>:0110226102</td></tr>
-                            <tr><td>Program Studi</td><td>:Teknik Informatika</td></tr>
-                            <tr><td>Asal Kota</td><td>:Depok</td></tr>
-                            <tr><td>Email</td><td>:rasyadzain1712@gmail.com</td></tr>
-                            <tr><td>Hobi</td><td>:Ngegame, Nonton Film, keluyuran</td></tr>
-                        </table>
-                    </div>
-            </article>
+      <article>
+        <img src="https://naa13-stack.github.io/nafis_tugas_praktikum_01/assets/img/rifhan.jpeg" alt="Foto Anggota 2" width="200">
+        <h2>Muhammad Rifhan Kasyfa</h2>
+        <table border="1" cellpadding="6">
+          <tr><th align="left">Nama Panggilan</th><td>Rifhan</td></tr>
+          <tr><th align="left">NIM</th><td>0110226024</td></tr>
+          <tr><th align="left">Program Studi</th><td>Teknik Informatika</td></tr>
+          <tr><th align="left">Kota Asal</th><td>Depok</td></tr>
+          <tr><th align="left">Email</th><td>muhrufhan6@gmail.com</td></tr>
+          <tr><th align="left">Hobi</th><td>Nonton Film</td></tr>
+        </table>
+      </article>
 
-            <article class="card">
-                <div class="card-top">
-                    <figure style="margin:0">
-                        <img src="assets/img/RASYID.jpeg" alt="Foto Anggota 4">
-                    </figure>
-                    <div>
-                        <h2>Muhammad Rasyid Ridho <span class="role">Role</span></h2>
-                        <table>
-                            <tr><td>Nama Panggilan</td><td>:Rasyid</td></tr>
-                            <tr><td>NIM</td><td>:0110226071</td></tr>
-                            <tr><td>Program Studi</td><td>:Teknik Informatika</td></tr>
-                            <tr><td>Asal Kota</td><td>:Depok</td></tr>
-                            <tr><td>Email</td><td>:mrasyidridho0406@gmail.com</td></tr>
-                            <tr><td>Hobi</td><td>:Berenang, futsal</td></tr>
-                        </table>
-                    </div>
-            </article>
+      <article>
+        <img src="https://naa13-stack.github.io/nafis_tugas_praktikum_01/assets/img/noval.jpeg" alt="Foto Anggota 3" width="200">
+        <h2>Muhammad Noval Reza Ramadhan</h2>
+        <table border="1" cellpadding="6">
+          <tr><th align="left">Nama Panggilan</th><td>Noval</td></tr>
+          <tr><th align="left">NIM</th><td>0110226163</td></tr>
+          <tr><th align="left">Program Studi</th><td>Teknik Informatika</td></tr>
+          <tr><th align="left">Asal Kota</th><td>Jakarta Timur</td></tr>
+          <tr><th align="left">Email</th><td>novalrahmadan1777@gmail.com</td></tr>
+          <tr><th align="left">Hobi</th><td>Ngegame, Nonton Film</td></tr>
+        </table>
+      </article>
 
-        </section>
-    </main>
+      <article>
+        <img src="https://naa13-stack.github.io/nafis_tugas_praktikum_01/assets/img/rasyad.jpeg" alt="Foto Anggota 4" width="200">
+        <h2>Muhammad Rasyad Zain</h2>
+        <table border="1" cellpadding="6">
+          <tr><th align="left">Nama Panggilan</th><td>Rasyad</td></tr>
+          <tr><th align="left">NIM</th><td>0110226102</td></tr>
+          <tr><th align="left">Program Studi</th><td>Teknik Informatika</td></tr>
+          <tr><th align="left">Asal Kota</th><td>Depok</td></tr>
+          <tr><th align="left">Email</th><td>rasyadzain1712@gmail.com</td></tr>
+          <tr><th align="left">Hobi</th><td>Ngegame, Nonton Film, keluyuran</td></tr>
+        </table>
+      </article>
 
-    <footer>
-        <p>Copyright &copy; 2026 Kelompok 11 - STT Terpadu Nurul Fikri</p>
-    </footer>
+      <article>
+        <img src="https://naa13-stack.github.io/nafis_tugas_praktikum_01/assets/img/RASYID.jpeg" alt="Foto Anggota 5" width="200">
+        <h2>Muhammad Rasyid Ridho Role</h2>
+        <table border="1" cellpadding="6">
+          <tr><th align="left">Nama Panggilan</th><td>Rasyid</td></tr>
+          <tr><th align="left">NIM</th><td>0110226071</td></tr>
+          <tr><th align="left">Program Studi</th><td>Teknik Informatika</td></tr>
+          <tr><th align="left">Asal Kota</th><td>Depok</td></tr>
+          <tr><th align="left">Email</th><td>mrasyidridho0406@gmail.com</td></tr>
+          <tr><th align="left">Hobi</th><td>Berenang, futsal</td></tr>
+        </table>
+      </article>
+
+    </section>
+  </main>
+
+  <hr>
 
 </body>
 </html>
